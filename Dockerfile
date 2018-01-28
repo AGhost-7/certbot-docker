@@ -27,4 +27,8 @@ COPY ./renew-hook.sh /renew-hook.sh
 
 # }}}
 
+# {{{ options
+ENV CERTBOT_HTTP_01_PORT 6000
+# }}}
+
 CMD ["/usr/local/bin/supercronic", "/etc/crontab"]

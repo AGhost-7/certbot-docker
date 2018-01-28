@@ -1,1 +1,1 @@
-30 2 * * * /usr/local/bin/certbot renew --renew-hook /renew-hook.sh
+30 2 * * * /usr/local/bin/certbot renew --renew-hook /renew-hook.sh --standalone --preferred-challenges http-01 --http-01-port $CERTBOT_HTTP_01_PORT
